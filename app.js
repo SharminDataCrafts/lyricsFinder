@@ -60,8 +60,13 @@ function displaySong(query){
                             <div class="col-md-8 my-auto">
                                 <h3 class="lyrics-name">${song}</h3>
                                 <p class="author lead">Album by <span>${artist}</span></p>
-                                <audio controls src="${music}" type="audio/mp3">
-                                </audio>
+                                <div class="row" d-flex flex-column mb-3>
+                                    
+                                        <p>🎵 Song Preview </p>
+                                        <audio controls src="${music}" type="audio/mp3">
+                                        </audio>
+                             
+                                </div>
                             </div>
                        </div>
                     </div>
