@@ -49,6 +49,7 @@ function displaySong(query){
         const song = data.data[0].title;
         const artist = data.data[0].artist.name;
         const imgSrc = data.data[0].album.cover;
+        const music =data.data[0].preview;
 
         songCard.innerHTML += ` <div class="single-result row align-items-center my-3 p-3">
                     <div class="col-md-9">
@@ -59,6 +60,8 @@ function displaySong(query){
                             <div class="col-md-8 my-auto">
                                 <h3 class="lyrics-name">${song}</h3>
                                 <p class="author lead">Album by <span>${artist}</span></p>
+                                <audio controls src="${music}" type="audio/mp3">
+                                </audio>
                             </div>
                        </div>
                     </div>
